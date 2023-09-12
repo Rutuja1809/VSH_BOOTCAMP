@@ -13,7 +13,7 @@ function findAllDogs(data){
             reject("NO RECORDS FOUND");
         }
         else{
-            console.log("Q1 output");
+            
             resolve(temp);
         }
     },1000)
@@ -36,7 +36,7 @@ function findSpecificStartChar(data,ch){
             reject("NO RECORDS FOUND");
         }
         else{
-            console.log("Q2 output");
+           
             resolve(temp);
         }
     },1000)
@@ -59,7 +59,7 @@ function findSumAges(data){
             reject("NO RECORDS FOUND");
         }
         else{
-            console.log("Q3 output");
+           
             resolve(sum);
         }
     },1000)
@@ -83,7 +83,7 @@ function findAll(data){
             reject("NO RECORDS FOUND");
         }
         else{
-            console.log("Q4 output")
+            
             resolve(rec);
         }
     },1000)
@@ -107,7 +107,7 @@ function findAllDogsSumOfAges(data){
             reject("NO RECORDS FOUND");
         }
         else{
-            console.log("Q5 output")
+            
             resolve(temp);
         }
     },1000)
@@ -142,7 +142,7 @@ findAllDogsSumOfAges(data);
 function Sorting(data,order){
     let promise= new Promise(function(resolve,reject){
         if(order==='ASC'){
-            console.log("Q6 output")
+            
             resolve(data.sort((a,b)=>a.name.localeCompare(b.name)));
         }else if(order==='DESC'){
             resolve(data.sort((a,b)=>b.name.localeCompare(a.name)));
