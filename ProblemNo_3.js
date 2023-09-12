@@ -7,7 +7,7 @@ const family = [
 //Q1. Write a promise function which will display all the name with age > 26
 function findAge(family){
     let promise=new Promise(function(resolve,reject){
-        const data=family.filter((element)=> element.age<26);
+        const data=family.filter((element)=> element.age>26);
         if(data.length===0){
             reject("NO RECORDS FOUND");
         }
